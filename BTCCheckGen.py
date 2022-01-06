@@ -27,7 +27,7 @@ System.printf('Укажите желаемое количество ссылок
 while True:
     try:
         global cicles
-        cicles = int(input())
+        cicles = int(input('>>> '))
         break
     except:
         System.printf('Введено не число!')
