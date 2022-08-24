@@ -11,7 +11,6 @@
 # Пример использования
 
 
-
 ```bash
 Укажите желаемое количество ссылок для генерации:
 >>> Two
@@ -28,10 +27,6 @@ https://t.me/BTC_CHANGE_BOT?start=c_8423f1496cgg64fa442f4gc6a5293fe0
 
 `pkg install python`
 
-`pip install os`
-
-`pip install random `
-
 # Запуск
 
-`python BTCCheckGen.py`
+`python main.py`
