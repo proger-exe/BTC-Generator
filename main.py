@@ -34,8 +34,8 @@ def main() -> None:
             how_many = int(stdout)
             break
 
-        else:
-            stdout = input("[Incorrent output]\nEnter count of receipts > ")
+        
+        stdout = input("[Incorrent output]\nEnter count of receipts > ")
 
     res = generate(how_many=how_many)
     for receipt in res:
