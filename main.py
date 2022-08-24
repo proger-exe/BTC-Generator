@@ -4,13 +4,13 @@ from typing import List
 
 
 def generate(how_many: int) -> List[str]:
-    """Bills generate func
+    """Receipts generate function
 
     Args:
-        how_many (int): how many receipts generate.
+        how_many (int): how many receipts create.
 
     Returns:
-        List[str]: the result
+        List[str]: a result
     """
 
     total_receipt = []
@@ -27,7 +27,7 @@ def main() -> None:
     "Main function"
 
     how_many = ""
-    stdout = input("Enter the count of receipts > ")
+    stdout = input("Enter count of receipts > ")
 
     while True:
         if stdout.isdigit():
@@ -35,7 +35,7 @@ def main() -> None:
             break
 
         else:
-            stdout = input("[Incorrent output]\nEnter the count of receipts > ")
+            stdout = input("[Incorrent output]\nEnter count of receipts > ")
 
     res = generate(how_many=how_many)
     for receipt in res:
