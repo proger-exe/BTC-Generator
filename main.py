@@ -16,7 +16,9 @@ def generate(how_many: int) -> List[str]:
     total_receipt = []
 
     for _ in range(how_many):
-        total_receipt.append("".join([random.choice('aedfgc1234567890') for _ in range(32)]))
+        total_receipt.append(
+            "".join([random.choice("aedfgc1234567890") for _ in range(32)])
+        )
 
     return total_receipt
 
@@ -27,7 +29,6 @@ def main() -> None:
     how_many = ""
     stdout = input("Enter the count of receipts > ")
 
-
     while True:
         if stdout.isdigit():
             how_many = int(stdout)
@@ -35,7 +36,6 @@ def main() -> None:
 
         else:
             stdout = input("[Incorrent output]\nEnter the count of receipts > ")
-
 
     res = generate(how_many=how_many)
     for receipt in res:
