@@ -4,7 +4,7 @@ from typing import List
 
 
 def generate(how_many: int) -> List[str]:
-    """Receipts generate function
+    """Receipts Function-generator
 
     Args:
         how_many (int): how many receipts create.
